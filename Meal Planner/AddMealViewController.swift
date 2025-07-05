@@ -16,6 +16,8 @@ class AddMealViewController: UIViewController {
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var noteTextView: UITextView!
     
+    var onSave: ((Meal, Date) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
