@@ -63,6 +63,9 @@
                             <constraint firstItem="iZi-BQ-6tA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YiY-Or-UUe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableVIew" destination="iZi-BQ-6tA" id="EBd-mu-Igb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
