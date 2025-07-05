@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="118" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="131" id="6e9-4N-A2X">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mealcell" rowHeight="131" id="6e9-4N-A2X" customClass="MealTableViewCell" customModule="Meal_Planner" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6e9-4N-A2X" id="ap8-hK-rZt">
@@ -50,6 +50,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="noteLabel" destination="dlc-hH-m7x" id="V3e-bG-SgL"/>
+                                            <outlet property="titleLabel" destination="VTH-IV-YlE" id="aDF-rE-8Fl"/>
+                                            <outlet property="typeLabel" destination="LD2-kq-xVt" id="eRJ-dq-I71"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,7 +69,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableVIew" destination="iZi-BQ-6tA" id="EBd-mu-Igb"/>
+                        <outlet property="tableView" destination="iZi-BQ-6tA" id="CQc-4e-38i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
